@@ -1,5 +1,6 @@
 package archivRest;
 
+import archivRest.model.AllgPerson;
 import archivRest.model.ShotList;
 import archivRest.model.ShotTimecode;
 import org.springframework.context.annotation.Configuration;
@@ -16,6 +17,7 @@ public class ExposeEntityIdRestConfiguration extends RepositoryRestConfigurerAda
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config) {
         config.exposeIdsFor(ShotList.class);
         config.exposeIdsFor(ShotTimecode.class);
+        config.exposeIdsFor(AllgPerson.class);
 
     }
 }
