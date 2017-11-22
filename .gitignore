@@ -28,3 +28,4 @@ archivRest.iml
 # dirs
 .gradle
 build
+!/libs/sqljdbc41.jar
